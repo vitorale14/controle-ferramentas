@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { apiDelete, apiGet, apiPost } from "../services/api";
 
 export default function Funcionarios() {
