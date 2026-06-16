@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eef2f7;
+  color: #172033;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  width: 240px;
+  background: #101828;
+  color: white;
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.sidebar p {
+  margin: -8px 0 24px;
+  color: #98a2b3;
+}
+
+.sidebar button {
+  background: transparent;
+  color: white;
+  border: 1px solid #344054;
+  border-radius: 10px;
+  padding: 12px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.sidebar button:hover {
+  background: #1d2939;
+}
+
+.content {
+  flex: 1;
+  padding: 32px;
+  overflow-x: auto;
+}
+
+section {
+  max-width: 1150px;
+}
+
+h2 {
+  margin: 0 0 20px;
+  font-size: 30px;
+}
+
+h3 {
+  margin-top: 28px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.card span {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.card p {
+  margin: 8px 0 0;
+  color: #667085;
+}
+
+.form,
+.filters {
+  background: white;
+  padding: 18px;
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 18px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.filters {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+input,
+select {
+  border: 1px solid #d0d5dd;
+  border-radius: 10px;
+  padding: 12px;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #475467;
+}
+
+.form button {
+  border: 0;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 12px;
+}
+
+.search {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.tableBox {
+  background: white;
+  border-radius: 16px;
+  overflow-x: auto;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 14px 16px;
+  border-bottom: 1px solid #eaecf0;
+  white-space: nowrap;
+}
+
+th {
+  background: #f9fafb;
+  color: #475467;
+  font-size: 14px;
+}
+
+tr:last-child td {
+  border-bottom: 0;
+}
+
+.danger {
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: #fee2e2;
+  color: #991b1b;
+  cursor: pointer;
+}
+
+.tag {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.ok {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.busy {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+@media (max-width: 850px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .sidebar h1 {
+    font-size: 24px;
+  }
+
+  .sidebar p {
+    margin: -6px 0 12px;
+  }
+
+  .sidebar button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .content {
+    padding: 16px;
+  }
+
+  section {
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .cards,
+  .form,
+  .filters {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .card span {
+    font-size: 30px;
+  }
+
+  input,
+  select,
+  button {
+    width: 100%;
+  }
+
+  table {
+    min-width: 700px;
+  }
+
+  th,
+  td {
+    padding: 12px;
+    font-size: 14px;
+  }
+}

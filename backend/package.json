@@ -1,0 +1,19 @@
+{
+  "name": "controle-ferramentas-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "mongoose": "latest"
+  },
+  "devDependencies": {
+    "nodemon": "latest"
+  }
+}
