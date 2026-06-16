@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Dashboard from "./pages/Dashboard.jsx";
 import Funcionarios from "./pages/Funcionarios.jsx";
 import Ferramentas from "./pages/Ferramentas.jsx";
