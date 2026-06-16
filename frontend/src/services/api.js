@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000";
+const API_URL = import.meta.env.VITE_API_URL;
 
 export async function apiGet(rota) {
   const resposta = await fetch(`${API_URL}${rota}`);
